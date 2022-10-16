@@ -13,8 +13,8 @@ public static class ExampleProgram
 {
   public static void Main()
   {
-    // these are example datapoints to be calculated; assume the array to be filled
-    var datapoints = new Datapoint[10000];
+    // these are example data points to be calculated; assume the array to be filled
+    var dataPoints = new Datapoint[10000];
     
     // create electric model
     var electricModelConfiguration = new ElectricModelExampleConfiguration();
@@ -38,7 +38,7 @@ public static class ExampleProgram
     var calculator = new TemperatureCalculator(configuration);
     
     // calculate
-    foreach (var datapoint in datapoints)
+    foreach (var datapoint in dataPoints)
     {
       var result = calculator.CalculateTemperature(datapoint);
       // do stuff with result
